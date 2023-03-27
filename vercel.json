@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "./index.js",
-      "use": "@vercel/node@2.5.10"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
+  "rewrites": [
+	{
+	  "source": "/api/:match*",
+	  "destination": "https://api.lfym2007227.ga"
+	}
   ]
 }
